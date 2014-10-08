@@ -19,7 +19,11 @@
 */
 
 - (IBAction)onTapped:(UITapGestureRecognizer *)sender{
-    NSLog(@"sender: %@",sender);
+    //NSLog(@"sender: %@",sender);
+}
+
+- (void)roll{
+    self.text = @(arc4random_uniform(6)+1).description;
 }
 
 

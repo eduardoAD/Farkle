@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DieLabel.h"
 
 @interface ViewController : UIViewController
 
+@property DieLabel *die;
 
 @end
 

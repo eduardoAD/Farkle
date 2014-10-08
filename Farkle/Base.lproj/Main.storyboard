@@ -30,7 +30,7 @@
                                     <outletCollection property="gestureRecognizers" destination="fOz-lg-Cj7" appends="YES" id="NJC-rP-kwy"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-qQ-xiZ">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-qQ-xiZ" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.49540324060000002" green="0.83202971179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -44,7 +44,7 @@
                                     <outletCollection property="gestureRecognizers" destination="4CI-xv-AQE" appends="YES" id="B25-GW-bdZ"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H6-v7-zhl">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H6-v7-zhl" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.49540324060000002" green="0.83202971179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -58,7 +58,7 @@
                                     <outletCollection property="gestureRecognizers" destination="1fZ-9h-N7u" appends="YES" id="clF-Pv-UPZ"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJQ-m4-umy">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJQ-m4-umy" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.49540324060000002" green="0.83202971179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -72,7 +72,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Psl-iO-CkN" appends="YES" id="1mG-JB-MN5"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3u-39-7s0">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3u-39-7s0" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.49540324060000002" green="0.83202971179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -86,7 +86,7 @@
                                     <outletCollection property="gestureRecognizers" destination="OCY-ZN-HMN" appends="YES" id="UWn-WF-H9a"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5g-Lv-IzT">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5g-Lv-IzT" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.49540324060000002" green="0.83202971179999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -123,6 +123,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="WWl-s4-pGj" id="Yob-q6-WQ6"/>
+                        <outlet property="label2" destination="2a0-qQ-xiZ" id="fn3-F0-fqG"/>
+                        <outlet property="label3" destination="6H6-v7-zhl" id="wPm-oZ-Jca"/>
+                        <outlet property="label4" destination="qJQ-m4-umy" id="RCJ-2W-wdQ"/>
+                        <outlet property="label5" destination="u3u-39-7s0" id="dvX-Wu-fhw"/>
+                        <outlet property="label6" destination="A5g-Lv-IzT" id="Dsx-qL-g5I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="fOz-lg-Cj7" userLabel="Tap Gesture Recognizer (1)">
