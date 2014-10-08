@@ -16,23 +16,26 @@
 @property (strong, nonatomic) IBOutlet DieLabel *label5;
 @property (strong, nonatomic) IBOutlet DieLabel *label6;
 
+@property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *labels;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.label1 roll];
-    [self.label2 roll];
-    [self.label3 roll];
-    [self.label4 roll];
-    [self.label5 roll];
-    [self.label6 roll];
+    self.labels = [[NSArray alloc] initWithObjects:self.label1, self.label2,
+                   self.label3, self.label4, self.label5, self.label6,nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)onRollButtonPressed:(id)sender {
+    for (DieLabel *label in self.labels) {
+        [label roll];
+    }
 }
 
 

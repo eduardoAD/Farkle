@@ -100,6 +100,18 @@
                                     <outletCollection property="gestureRecognizers" destination="ObB-xc-jvT" appends="YES" id="a7S-Y2-BQn"/>
                                 </connections>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLh-z0-KDZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="130" y="325" width="140" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onRollButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4z9-pG-ZnU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -110,6 +122,7 @@
                                 <exclude reference="qJQ-m4-umy"/>
                                 <exclude reference="u3u-39-7s0"/>
                                 <exclude reference="A5g-Lv-IzT"/>
+                                <exclude reference="YLh-z0-KDZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,6 +133,7 @@
                                 <include reference="qJQ-m4-umy"/>
                                 <include reference="u3u-39-7s0"/>
                                 <include reference="A5g-Lv-IzT"/>
+                                <include reference="YLh-z0-KDZ"/>
                             </mask>
                         </variation>
                     </view>
