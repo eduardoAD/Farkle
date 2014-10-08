@@ -18,4 +18,9 @@
 }
 */
 
+- (IBAction)onTapped:(UITapGestureRecognizer *)sender{
+    NSLog(@"sender: %@",sender);
+}
+
+
 @end
