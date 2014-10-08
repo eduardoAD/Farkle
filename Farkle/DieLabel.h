@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol DieLabelProtocol
 
+- (void) didDieLabelTapped:(UILabel *)label;
+
+@end
 @interface DieLabel : UILabel
 
 - (void)roll;
+@property id<DieLabelProtocol>delegate;
 
 @end

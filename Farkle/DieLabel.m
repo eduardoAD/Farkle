@@ -10,20 +10,21 @@
 
 @implementation DieLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 - (IBAction)onTapped:(UITapGestureRecognizer *)sender{
-    //NSLog(@"sender: %@",sender);
+    DieLabel *label = (DieLabel*)sender.view;
+    if ([label.backgroundColor isEqual:[UIColor cyanColor]]) {
+        label.backgroundColor = [UIColor blueColor];
+    }else{
+        label.backgroundColor = [UIColor cyanColor];
+    }
+    [self.delegate didDieLabelTapped:label];
 }
 
 - (void)roll{
-    self.text = @(arc4random_uniform(6)+1).description;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.text = @(arc4random_uniform(6)+1).description;
+    });
+    self.text = @"rolling";
 }
 
 
