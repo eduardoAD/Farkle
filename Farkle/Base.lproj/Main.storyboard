@@ -24,7 +24,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="49" width="140" height="21"/>
+                                    <rect key="frame" x="130" y="87" width="140" height="21"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="fOz-lg-Cj7" appends="YES" id="NJC-rP-kwy"/>
@@ -38,7 +38,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="89" width="140" height="21"/>
+                                    <rect key="frame" x="130" y="127" width="140" height="21"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="4CI-xv-AQE" appends="YES" id="B25-GW-bdZ"/>
@@ -52,7 +52,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="131" width="140" height="21"/>
+                                    <rect key="frame" x="130" y="169" width="140" height="21"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="1fZ-9h-N7u" appends="YES" id="clF-Pv-UPZ"/>
@@ -66,7 +66,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="172" width="140" height="21"/>
+                                    <rect key="frame" x="130" y="210" width="140" height="21"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Psl-iO-CkN" appends="YES" id="1mG-JB-MN5"/>
@@ -80,7 +80,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="213" width="140" height="21"/>
+                                    <rect key="frame" x="130" y="251" width="140" height="21"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="OCY-ZN-HMN" appends="YES" id="UWn-WF-H9a"/>
@@ -94,7 +94,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="254" width="140" height="21"/>
+                                    <rect key="frame" x="130" y="292" width="140" height="21"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ObB-xc-jvT" appends="YES" id="a7S-Y2-BQn"/>
@@ -106,12 +106,39 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="325" width="140" height="30"/>
+                                    <rect key="frame" x="130" y="363" width="140" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="onRollButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4z9-pG-ZnU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBT-hU-Eth">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="165" y="50" width="70" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBn-hs-Zy4">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="50" width="50" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ9-yq-kZF">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="328" width="200" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -123,6 +150,9 @@
                                 <exclude reference="u3u-39-7s0"/>
                                 <exclude reference="A5g-Lv-IzT"/>
                                 <exclude reference="YLh-z0-KDZ"/>
+                                <exclude reference="bBT-hU-Eth"/>
+                                <exclude reference="yBn-hs-Zy4"/>
+                                <exclude reference="LZ9-yq-kZF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -134,6 +164,9 @@
                                 <include reference="u3u-39-7s0"/>
                                 <include reference="A5g-Lv-IzT"/>
                                 <include reference="YLh-z0-KDZ"/>
+                                <include reference="bBT-hU-Eth"/>
+                                <include reference="yBn-hs-Zy4"/>
+                                <include reference="LZ9-yq-kZF"/>
                             </mask>
                         </variation>
                     </view>
@@ -144,6 +177,8 @@
                         <outlet property="label4" destination="qJQ-m4-umy" id="RCJ-2W-wdQ"/>
                         <outlet property="label5" destination="u3u-39-7s0" id="dvX-Wu-fhw"/>
                         <outlet property="label6" destination="A5g-Lv-IzT" id="Dsx-qL-g5I"/>
+                        <outlet property="statusLabel" destination="LZ9-yq-kZF" id="hyf-oR-LlZ"/>
+                        <outlet property="userScore" destination="bBT-hU-Eth" id="ex8-92-84U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
